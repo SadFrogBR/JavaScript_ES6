@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+        //let [a, b, , c] = frutas
+        
+        let [a, b = '', c, d, e = 'banana'] = frutas
+
+        console.log(a, b, c, d, e)
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['Jose', 'Maria']]
+
+        let [, [,m]] = coisas
+
+        let [[, , p]] = coisas
+
+        console.log(p)
+    </script>
+
+</head>
+<body style="background-color: black;">
+
+
+</body>
+</html>

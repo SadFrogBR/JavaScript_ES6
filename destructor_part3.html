@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        //array
+
+        /*let arr = [10, 20, 30, 40]
+
+        function teste([a, b, , c, d = 100] = arr){
+            console.log(a, b, c, d)
+        }
+            teste(arr)
+
+        */
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40,
+            amais: {
+                e: 50,
+                f: 60
+            }
+        }
+
+        function teste({a: x, b, c, d, amais: {e, f}, g = 200}){
+            console.log(x, b, c, d, e, f, g)
+        }
+            teste(obj)
+
+    </script>
+
+</head>
+<body style="background-color: black;">
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>//scopo global
+        
+        //var serie = 'friends'
+
+        function x(){//scopo de função
+            var serie = 'game of thrones'
+            
+            if(true){//scopo de bloco
+                var serie = 'the walking deade'
+                console.log('Bloco dentro da função: ' + serie)
+            }
+            console.log('Bloco dentro da função: ' + serie)
+        }
+        
+        x()
+        
+        console.log('global: ' + serie)
+
+        if(true){//scopo de bloco= com var eleva a variavel a um nivel acima
+            //var serie = 'the walking deade'
+            console.log('bloco: ' + serie)
+        }
+
+        console.log('bloco: ' + serie)
+
+        if(true){
+            let serie = 'friends'
+            console.log(serie)
+        }
+            console.log(serie)
+        
+
+    </script>
+
+</head>
+<body>
+   
+    <p>joj</p>
+
+
+</body>
+</html>

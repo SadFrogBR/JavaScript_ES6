@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        //um softweare de mercenaria
+        //cadeira e sofa
+
+        //paradigma procedural
+
+        //cadeira
+        /*
+        let qtde_pernas = 4
+        let giratoria = true
+        let cor = 'azul'
+
+        function girar_cadeira(){
+            if(giratoria === true){
+                console.log('girou')
+            }else{
+                console.log('cadeira não e giratoria')
+            }
+        }
+
+        girar_cadeira()
+        */
+        //Orientação objeto
+
+        /*class Cadeira {
+
+            constructor(qtd, giratoria, cor){
+                this.qtde_pernas = qtd
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girar_cadeira(){
+            if(this.giratoria === true){
+                console.log('girou')
+            }else{
+                console.log('cadeira não e giratoria')
+            }
+        }
+
+        }
+
+
+        let cadeiras = Array()
+        cadeiras.push(new Cadeira(2, false, 'verde'))
+        cadeiras.push(new Cadeira(3, true, 'azul'))
+
+        console.log(cadeiras[0].girar_cadeira())*/
+
+
+        class Sofa{
+            
+            constructor(qtde_lugares, cor ,material, reclinavel){
+                this.qtde_lugares = qtde_lugares
+                this.cor = cor
+                this.material = material
+                this.reclinavel = reclinavel
+            }
+
+            ReclinavelOuNao(){
+                if(this.reclinavel == true){
+                    console.log('Reclinando')
+                }else{
+                    console.log('não e reclinavel')
+                }
+            }
+
+        }
+
+        sofazin = new Sofa(3, 'azul', 'papelao', true)
+        sofazin.ReclinavelOuNao()
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>

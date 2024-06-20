@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        let Bicicleta1 = {
+            cor: 'Branca',
+            marcha: 'unica',
+            aro: 12,
+            pedalar(){
+                console.log('Metodo de Pedalar executado')
+            }
+        }
+
+        console.log(Bicicleta1)
+
+        let BicicletaFactory = function(cor, marcha, aro){
+            
+            return{
+                cor,
+                marcha,
+                aro,
+                pedalar(){
+                    console.log('Metodo de Pedalar executado')
+                }
+            }
+        }
+
+        let Bicicleta2 = BicicletaFactory('verde', 'dupla', 18)
+        console.log(Bicicleta2)
+
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>

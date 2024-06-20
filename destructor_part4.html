@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        //array
+
+        /*let arr = [10, 20, 30, 40]
+
+        
+        function separa([ a, ...resto]){
+
+            console.log(a, resto)
+            
+
+        }
+
+        separa(arr)*/
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40,
+            debiu: {
+                e: 50
+            }
+        }
+
+        function separa({ a, debiu: {e}, ...resto}){
+
+            console.log(a, resto, e)
+
+
+        }
+
+        separa(obj)
+
+    </script>
+
+</head>
+<body style="background-color: black;">
+
+
+</body>
+</html>

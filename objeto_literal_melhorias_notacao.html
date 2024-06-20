@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+
+        div{
+            text-align: justify;
+        }
+
+        input{
+            margin-left: 30px;
+        }
+
+        #profissao{
+            margin-left: 5px;
+        }
+
+        #nome, #profissao{
+            width: 305px;
+        }
+
+        button{
+            margin-left: 330px;
+        }
+
+    </style>
+
+    <script>
+
+
+        function geraResumo(){
+
+            let usuario = {
+            nome: document.getElementById('nome').value,
+            idade: document.getElementById('idade').value,
+            sexo: document.getElementById('sexo').value,
+            profissao: document.getElementById('profissao').value,
+            exibirResumo: function(){
+
+                return `Usuario ${this.nome} com ${this.idade} anos, sexo ${this.sexo}, na area de ${this.profissao}`
+
+            } 
+
+            }
+
+            document.getElementById('tudo').remove()
+            document.write(usuario.exibirResumo())
+
+
+
+        }
+
+        function geraResumo2(){
+            let nome = document.getElementById('nome').value
+            let idade = document.getElementById('idade').value
+            let sexo = document.getElementById('sexo').value
+            let profissao = document.getElementById('profissao').value
+
+
+            let usuario2 = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                x(){
+
+                    return `Usuario ${this.nome} com ${this.idade} anos, sexo ${this.sexo}, na area de ${this.profissao}`
+
+                } 
+            }
+
+            document.getElementById('tudo').remove()
+            document.write(usuario2.x())
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+<div id="tudo">
+    nome: <input type="text" id="nome"><br/>
+    idade: <input type="number" id="idade"> 
+    Sexo: <select id="sexo">
+        <option>-Selecione-</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+    </select>
+    <br/>
+    profissão: <input type="text" id="profissao"><br/>
+    <button onclick="geraResumo2()">Enviar</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <script>
+
+        //modelo do objeto
+        class ContaBancaria{
+
+
+            constructor(){
+                this.agencia = 1075
+                this.numeroConta = 834563
+                this.saldo = 50
+                this.limite = 450
+
+            }
+
+            depositar(valor){
+                this.saldo += valor
+            }
+
+            sacar(valor){
+                this.saldo -=  valor
+            }
+
+            consultarSaldo(){
+                return this.saldo
+            }
+
+
+        }
+
+        samuel = new ContaBancaria()
+        console.log(samuel.consultarSaldo())
+        samuel.sacar(50)
+        console.log(samuel.consultarSaldo())
+        samuel.depositar(200)
+        console.log(samuel.consultarSaldo())
+
+
+
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>
